@@ -34,3 +34,6 @@ Route::post('proyek/{id}/daftarkan-staff', "ProyekController@simpandaftar");
 Route::get('/proyek/{id}/edit','ProyekController@edit');
 Route::put('proyek/{id}','ProyekController@update');
 Route::delete('/proyek{id}','ProyekController@delete');
+Route::get('/form', function(){
+	return view('proyek.create');
+});

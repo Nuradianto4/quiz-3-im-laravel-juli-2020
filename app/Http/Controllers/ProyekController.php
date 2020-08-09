@@ -14,7 +14,7 @@ class ProyekController extends Controller
     }
     public function create()
     {
-      return view('proyek.create');
+      return redirect('/form');
     }
 
     public function store(Request $request)
