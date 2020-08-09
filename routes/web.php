@@ -23,9 +23,9 @@ Route::get('/items/{id}/edit', 'ItemController@edit'); // menampilkan form untuk
 Route::put('/items/{id}', 'ItemController@update'); // menyimpan perubahan dari form edit
 Route::delete('/items/{id}', 'ItemController@destroy'); // menghapus data dengan id
 
-/*Route::get('/', function(){
-	return view('index');
-});*/
+Route::get('/', function(){
+	return view('proyek.index');
+});
 Route::get('/proyek', 'ProyekController@index');
 Route::get('/proyek/create','ProyekController@create');
 Route::post('/proyek','ProyekController@store');
